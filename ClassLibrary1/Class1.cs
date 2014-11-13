@@ -13,6 +13,8 @@ namespace ClassLibrary1
         [Fact]
         public void GivenAFunkyString_EscapeDataString_EncodesTheData()
         {
+            Console.WriteLine(Environment.Version);
+            
             // Arrange.
             const string data = "abcde *.(.).";
 
