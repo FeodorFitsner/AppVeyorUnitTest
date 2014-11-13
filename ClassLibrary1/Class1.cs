@@ -22,7 +22,7 @@ namespace ClassLibrary1
             var result = Uri.EscapeDataString(data);
 
             // Assert.
-            Assert.Equal("abcde%20%2A.%28.%29.", result);
+            Assert.Equal("abcde%20%2A.%28.%29.", v);
             //result.ShouldBe("abcde%20%2A.%28.%29.");
         }
     }
