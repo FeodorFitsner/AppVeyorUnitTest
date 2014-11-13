@@ -2,5 +2,8 @@ before_build:
   - nuget restore
   - nuget install xunit.runners -ExcludeVersion
 
+after_build:
+  - ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+
 test_script:
   - xunit.runners\tools\xunit.console.clr4.x86 "C:\projects\appveyorunittest\ClassLibrary1\bin\Debug\ClassLibrary1.dll"
