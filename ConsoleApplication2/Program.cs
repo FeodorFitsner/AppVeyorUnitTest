@@ -11,8 +11,6 @@ namespace ConsoleApplication2
             var result = Uri.EscapeDataString(data);
 
             Console.WriteLine(result);
-
-            Console.ReadKey();
         }
     }
 }
