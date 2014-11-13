@@ -19,10 +19,10 @@ namespace ClassLibrary1
             const string data = "abcde *.(.).";
 
             // Act.
-            var result = Uri.EscapeDataString(data);
+            var result = Uri.EscapeDataString("abcde *.(.).");
 
             // Assert.
-            Assert.Equal("abcde%20%2A.%28.%29.", v.ToString());
+            Assert.Equal("abcde%20%2A.%28.%29.", result);
             //result.ShouldBe("abcde%20%2A.%28.%29.");
         }
     }
