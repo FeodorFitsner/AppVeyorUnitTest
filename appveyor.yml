@@ -1,2 +1,5 @@
 before_build:
   - nuget restore
+
+test_script:
+  - xunit.console.clr4 "C:\projects\appveyorunittest\ClassLibrary1\bin\Debug\ClassLibrary1.dll" /appveyor
